@@ -12,3 +12,9 @@ h1, h2 {
  font-size: 35px;
  color: #fff;
 }
+
+label {
+ font-family: 'Signika Negative', sans-serif;
+ font-size: 18px;
+ color: #008B8B;
+}
