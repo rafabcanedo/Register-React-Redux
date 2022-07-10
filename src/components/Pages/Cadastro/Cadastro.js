@@ -13,27 +13,46 @@ const Cadastro = () => {
     <div className='form-container'>
     <div className='wrap-input'>
       <label>Nome Completo </label>
-      <input className='input-camp' type="text" />
+      <input 
+      className='input-camp' 
+      type="text" 
+      placeholder='Digite seu Nome'
+      />
     </div>
 
      <div className='wrap-input'>
       <label>Email </label>
-      <input className='input-camp' type="email" />
+      <input 
+      className='input-camp' 
+      type="email" 
+      placeholder='Digite seu email'
+      />
      </div>
 
      <div className='wrap-input'>
       <label>Senha </label>
-      <input className='input-camp' type="password" />
+      <input 
+      className='input-camp' 
+      type="password" 
+      placeholder='Digite uma senha'
+      />
      </div>
 
      <div className='wrap-input'>
       <label>Data de nascimento </label>
-      <input className='input-camp' type="date" />
+      <input 
+      className='input-camp' 
+      type="date" 
+      />
      </div>
 
      <div className='wrap-input'>
       <label>CPF </label>
-      <input className='input-camp' type="number" />
+      <input 
+      className='input-camp' 
+      type="number" 
+      placeholder='Digie seu CPF'
+      />
      </div>
     </div>
 

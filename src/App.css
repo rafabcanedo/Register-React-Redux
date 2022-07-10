@@ -7,10 +7,22 @@ body {
  background: #222225;
 }
 
-h1, h2 {
+h1 {
  font-family: 'Signika Negative', sans-serif;
  font-size: 35px;
  color: #fff;
+}
+
+h2 {
+ font-family: 'Signika Negative', sans-serif;
+ font-size: 30px;
+ color: #fff;  
+}
+
+h3 {
+ font-family: 'Signika Negative', sans-serif;
+ font-size: 25px;
+ color: #fff;     
 }
 
 label {
