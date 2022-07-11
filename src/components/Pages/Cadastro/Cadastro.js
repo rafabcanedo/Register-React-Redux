@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Cadastro.css';
 
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { changeUser } from '../../../redux/userSlice';
 
 const Cadastro = () => {
+  const [name, setName] = useState('');
+  const dispatch = useDispatch();
+
+  const handleLogin = () => {
+    dispatch(changeUser(name))
+  }
+
  return(
   <div className='section'>
     <form className='cadastro'>
@@ -17,6 +26,7 @@ const Cadastro = () => {
       className='input-camp' 
       type="text" 
       placeholder='Digite seu Nome'
+      onChange={(e) => setName(e.target.value)}
       />
     </div>
 
@@ -59,7 +69,7 @@ const Cadastro = () => {
 
     <div className='button-submit'>
       <Link to='/home'>
-      <button className='form-button'>Cadastrar</button>
+      <button className='form-button' onClick={handleLogin}>Cadastrar</button>
       </Link>
     </div>
 

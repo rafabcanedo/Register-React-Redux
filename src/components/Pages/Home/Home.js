@@ -1,5 +1,7 @@
 import React from 'react';
 import './Home.css';
+import Button from '../../Logout';
+import User from '../../User';
 
 import { Link } from 'react-router-dom';
 
@@ -9,7 +11,7 @@ const Home = () => {
    <div className='container'>
    
    <div className='home'>
-   <h1>Bem Vindo, $User </h1>
+   <User />
    
    <h3>Equipe $Empresa aqui</h3>
    
@@ -27,6 +29,13 @@ const Home = () => {
     <Link to='/alteracao'>
     <button className='home-button'>Alterar Dados</button>
     </Link>
+
+    <div className="button-alteracao">
+    <Link to='/'>
+    <Button />
+    </Link>
+    </div>
+    
    </div>
    </div>
   </div>
