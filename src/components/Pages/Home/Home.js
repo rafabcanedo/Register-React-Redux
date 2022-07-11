@@ -7,9 +7,12 @@ const Home = () => {
  return(
   <div className='main'>
    <div className='container'>
+   
+   <div className='home'>
    <h1>Bem Vindo, $User </h1>
    
-   <h3>Teste</h3>
+   <h3>Equipe $Empresa aqui</h3>
+   
    <text className='text'>
     Aqui na $Empresa, temos toda a atenção ao usuário <br />
     Em nossa home você tem acesso aos seus dados cadastrais e caso queira <br />
@@ -18,9 +21,11 @@ const Home = () => {
     ou nos envie um email.
     </text>
 
+    </div>
+
    <div className='button-alteracao'>
     <Link to='/alteracao'>
-    <button>Alterar Dados</button>
+    <button className='home-button'>Alterar Dados</button>
     </Link>
    </div>
    </div>
